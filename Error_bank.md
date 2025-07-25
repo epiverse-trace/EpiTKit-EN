@@ -86,7 +86,7 @@ attached base packages:
 
 loaded via a namespace (and not attached):
 [1] compiler_4.5.1 tools_4.5.1    yaml_2.3.10    knitr_1.49     xfun_0.51     
-[6] renv_1.1.4     evaluate_1.0.3
+[6] renv_1.1.5     evaluate_1.0.3
 ```
 
 **You will get information similar to this. In this case the version is 4.5**
@@ -699,7 +699,8 @@ Make sure that the "Typeset PDF" option is set to use TinyTeX.
 
 **Data handling with Tidyverse and R:**
 
-<https://www.youtube.com/watch?v=6STcQVX8Hk0>
+<https://www.youtube.com/playlist?list=PLtL57Fdbwb_D-iZXfWd2myjpYXSg_yi9G>
+<https://www.youtube.com/playlist?list=PLtL57Fdbwb_AWmWWrFV_pLqq2uicpUIO9>
 
 ::: keypoints
 
