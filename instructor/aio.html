@@ -1770,7 +1770,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-Deterministic_model"><p>Content from <a href="Deterministic_model.html">Building a simple deterministic model</a></p>
 <hr>
-<p>Last updated on 2025-07-01 |
+<p>Last updated on 2025-08-11 |
 
         <a href="https://github.com/joskerus/EpiTKit-EN/edit/main/episodes/Deterministic_model.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 128 minutes</p>
@@ -1984,7 +1984,7 @@ the value of each of these parameters.</p>
   Solution 1
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2005,7 +2005,7 @@ the value of each of these parameters.</p>
 <span><span class="va">Nh</span> <span class="op">&lt;-</span> <span class="fl">100000</span>            <span class="co"># Number of humans. For this exercise, we suggest 100,000 humans. You can change this if you want according to the city you chose to model.</span></span>
 <span><span class="va">m</span> <span class="op">&lt;-</span> <span class="fl">2</span>                  <span class="co"># Density of female mosquitoes per human</span></span>
 <span><span class="va">Nv</span> <span class="op">&lt;-</span> <span class="va">m</span> <span class="op">*</span> <span class="va">Nh</span>            <span class="co"># Number of mosquitoes (m * Nh)</span></span>
-<span><span class="va">R0</span> <span class="op">&lt;-</span> <span class="fl">1000</span>              <span class="co"># Basic Reproduction Number</span></span>
+<span><span class="va">R0</span> <span class="op">&lt;-</span> <span class="fl">3</span>                 <span class="co"># Basic Reproduction Number</span></span>
 <span><span class="va">ph</span> <span class="op">&lt;-</span> <span class="fl">0.7</span>               <span class="co"># Probability of transmission from an infectious mosquito to a susceptible human after a bite.</span></span>
 <span><span class="va">pv</span> <span class="op">&lt;-</span> <span class="fl">0.7</span>               <span class="co"># Probability of transmission from an infectious human to a susceptible mosquito after a bite.</span></span>
 <span><span class="va">b</span> <span class="op">&lt;-</span> <span class="fu">sqrt</span><span class="op">(</span><span class="op">(</span><span class="va">R0</span> <span class="op">*</span> <span class="va">muv</span> <span class="op">*</span> <span class="op">(</span><span class="va">muv</span> <span class="op">+</span> <span class="va">delta</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="va">muh</span> <span class="op">+</span> <span class="va">gamma</span><span class="op">)</span><span class="op">)</span> <span class="op">/</span> </span>
@@ -2162,7 +2162,7 @@ on in the previous instruction.</p>
   Solution 3
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2290,7 +2290,7 @@ tutorial.</p>
   Solution 5
   </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2360,7 +2360,7 @@ have worked on so far.</p>
   Solution 6
   </h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
+<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2429,7 +2429,7 @@ that Ih = 1 and Sh = Nh - 1.</p>
   Solution
   </h3>
 </button>
-<div id="collapseInstructor5" class="accordion-collapse collapse" aria-labelledby="headingInstructor5" data-bs-parent="#accordionInstructor5">
+<div id="collapseInstructor5" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor5" aria-labelledby="headingInstructor5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3748,8 +3748,8 @@ any links that you are not going to use.
   "url": "https://joskerus.github.io/EpiTKit-EN/instructor/aio.html",
   "identifier": "https://joskerus.github.io/EpiTKit-EN/instructor/aio.html",
   "dateCreated": "2024-06-04",
-  "dateModified": "2025-08-05",
-  "datePublished": "2025-08-05"
+  "dateModified": "2025-08-11",
+  "datePublished": "2025-08-11"
 }
 
   </script><script>
