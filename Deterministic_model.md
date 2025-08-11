@@ -208,7 +208,7 @@ delta <- 1 / EIP        # Extrinsic incubation rate (1/EIP)
 Nh <- 100000            # Number of humans. For this exercise, we suggest 100,000 humans. You can change this if you want according to the city you chose to model.
 m <- 2                  # Density of female mosquitoes per human
 Nv <- m * Nh            # Number of mosquitoes (m * Nh)
-R0 <- 1000              # Basic Reproduction Number
+R0 <- 3                 # Basic Reproduction Number
 ph <- 0.7               # Probability of transmission from an infectious mosquito to a susceptible human after a bite.
 pv <- 0.7               # Probability of transmission from an infectious human to a susceptible mosquito after a bite.
 b <- sqrt((R0 * muv * (muv + delta) * (muh + gamma)) / 
