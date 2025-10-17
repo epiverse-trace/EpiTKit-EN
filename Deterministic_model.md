@@ -276,7 +276,11 @@ Formula needed to estimate $R_0$:
 
 $$ R_0 = \frac{mb^2 p_h p_v \delta}{\mu_v (\mu_v+\delta)(\mu_h+\gamma)} $$
 
+## 6\.4 Zika model equations in R
+
 ::::::::::::::::::::::::::::::::::::: challenge
+
+### Challenge 2
 
 **Instruction**: Translate the equations into R
 
@@ -294,6 +298,8 @@ $$ R_0 = \frac{mb^2 p_h p_v \delta}{\mu_v (\mu_v+\delta)(\mu_h+\gamma)} $$
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+## 6\.5 Zika model in R
 
 Once we know how to translate the equations into code, we will proceed to run the model.
 For this, the ode function of the deSolve package will be used.
@@ -369,7 +375,7 @@ zika_model <- function(time, state_variable, parameters) {
 
 </center>
 
-## 6\.4 Solving the System
+## 6\.6 Solving the System
 
 To solve the system it is necessary to create the three missing arguments (**times**, **parms** y **y**) to use the function `ode`.
 
@@ -404,7 +410,7 @@ parameters <- c(
 In the code that ran, time was created (**times)** and parameters (**params)**.
 We still need to create the argument **y** argument, which we will develop in the next section.
 
-### 6\.4.1. **Initial conditions of the system (y)**
+### 6\.6.1. **Initial conditions of the system (y)**
 
 In order to define the initial conditions, recall that the scenario to be modelled in this exercise is for a date **before the report of the
 first case**.
@@ -462,7 +468,7 @@ start <- c(Sh = Nh,        # Population of susceptible humans before the start o
 
 </center>
 
-### 6\.4.2 Function ode
+### 6\.6.2 Function ode
 
 Once all the necessary arguments have been created, it is time to enter them into ode.
 Let's remember the four arguments of ode and a which correspond to:
@@ -520,7 +526,7 @@ out <- ode(y = start ,
 
 </center>
 
-### 6\.4.3 **Introducing the first case**
+### 6\.6.3 **Introducing the first case**
 
 Now that we have all the compartments defined, it is time to enter an infectious individual into the model to start the epidemic. 
 
@@ -575,7 +581,7 @@ out <- ode(y = start ,
 
 </center>
 
-## 6\.5 **Now let's run the model!**
+## 6\.7 **Now let's run the model!**
 
 **At this point, you have filled in all the missing information in
 the script in order to be able to run the model.**
@@ -591,7 +597,7 @@ In case of error, please check the spelling of the code and that there are no ot
 
 :::::::::::::::::::::::::::::::::::::::::::
 
-## 6\.6 **Viewing the results**
+## 6\.8 **Viewing the results**
 
 **In our course we will use ggplot for data visualisation. It is
 important that you review Unit 4. Data visualisation in ggplot**
@@ -616,7 +622,7 @@ out$weeks <- out$time/7
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## 6\.7 **Visualise and analyse the first epidemic**
+## 6\.9 **Visualise and analyse the first epidemic**
 
 Let's start with a visualisation of the first epidemic.
 Since it is a period of one year, let's visualise the graphs in weeks. 
