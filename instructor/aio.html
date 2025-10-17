@@ -1770,7 +1770,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-Deterministic_model"><p>Content from <a href="Deterministic_model.html">Building a simple deterministic model</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-17 |
 
         <a href="https://github.com/joskerus/EpiTKit-EN/edit/main/episodes/Deterministic_model.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 128 minutes</p>
@@ -2086,12 +2086,15 @@ I_v\]</span></p>
 <p>Formula needed to estimate <span class="math inline">\(R_0\)</span>:</p>
 <p><span class="math display">\[ R_0 = \frac{mb^2 p_h p_v \delta}{\mu_v
 (\mu_v+\delta)(\mu_h+\gamma)} \]</span></p>
-<div id="discussion2" class="callout discussion">
+</section><section><h2 class="section-heading" id="zika-model-equations-in-r">6.4 Zika model equations in R<a class="anchor" aria-label="anchor" href="#zika-model-equations-in-r"></a>
+</h2>
+<hr class="half-width">
+<div id="challenge-2" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="challenge-2" class="callout-inner">
+<h3 class="callout-title">Challenge 2</h3>
 <div class="callout-content">
 <p><strong>Instruction</strong>: Translate the equations into R</p>
 <div class="codewrapper sourceCode" id="cb4">
@@ -2110,6 +2113,9 @@ I_v\]</span></p>
 </div>
 </div>
 </div>
+</section><section><h2 class="section-heading" id="zika-model-in-r">6.5 Zika model in R<a class="anchor" aria-label="anchor" href="#zika-model-in-r"></a>
+</h2>
+<hr class="half-width">
 <p>Once we know how to translate the equations into code, we will
 proceed to run the model. For this, the ode function of the deSolve
 package will be used.</p>
@@ -2196,7 +2202,7 @@ on in the previous instruction.</p>
 <center>
 <p><a href="https://epiverse-trace.github.io/EpiTKit-EN/Error_bank.html" class="external-link"><img src="../fig/dudas.png" width="100" class="figure"></a></p>
 </center>
-</section><section><h2 class="section-heading" id="solving-the-system">6.4 Solving the System<a class="anchor" aria-label="anchor" href="#solving-the-system"></a>
+</section><section><h2 class="section-heading" id="solving-the-system">6.6 Solving the System<a class="anchor" aria-label="anchor" href="#solving-the-system"></a>
 </h2>
 <hr class="half-width">
 <p>To solve the system it is necessary to create the three missing
@@ -2239,7 +2245,7 @@ parameters (<strong>params)</strong>. We still need to create the
 argument <strong>y</strong> argument, which we will develop in the next
 section.</p>
 <div class="section level3">
-<h3 id="initial-conditions-of-the-system-y">6.4.1. <strong>Initial conditions of the system (y)</strong>
+<h3 id="initial-conditions-of-the-system-y">6.6.1. <strong>Initial conditions of the system (y)</strong>
 <a class="anchor" aria-label="anchor" href="#initial-conditions-of-the-system-y"></a>
 </h3>
 <p>In order to define the initial conditions, recall that the scenario
@@ -2314,7 +2320,7 @@ tutorial.</p>
 </center>
 </div>
 <div class="section level3">
-<h3 id="function-ode">6.4.2 Function ode<a class="anchor" aria-label="anchor" href="#function-ode"></a>
+<h3 id="function-ode">6.6.2 Function ode<a class="anchor" aria-label="anchor" href="#function-ode"></a>
 </h3>
 <p>Once all the necessary arguments have been created, it is time to
 enter them into ode. Let’s remember the four arguments of ode and a
@@ -2383,7 +2389,7 @@ have worked on so far.</p>
 </center>
 </div>
 <div class="section level3">
-<h3 id="introducing-the-first-case">6.4.3 <strong>Introducing the first case</strong>
+<h3 id="introducing-the-first-case">6.6.3 <strong>Introducing the first case</strong>
 <a class="anchor" aria-label="anchor" href="#introducing-the-first-case"></a>
 </h3>
 <p>Now that we have all the compartments defined, it is time to enter an
@@ -2463,7 +2469,7 @@ that Ih = 1 and Sh = Nh - 1.</p>
 <p><a href="https://epiverse-trace.github.io/EpiTKit-EN/Error_bank.html" class="external-link"><img src="../fig/dudas.png" width="100" class="figure"></a></p>
 </center>
 </div>
-</section><section><h2 class="section-heading" id="now-lets-run-the-model">6.5 <strong>Now let’s run the model!</strong>
+</section><section><h2 class="section-heading" id="now-lets-run-the-model">6.7 <strong>Now let’s run the model!</strong>
 <a class="anchor" aria-label="anchor" href="#now-lets-run-the-model"></a>
 </h2>
 <hr class="half-width">
@@ -2489,7 +2495,7 @@ no other characters left in the code that do not correspond, for example
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="viewing-the-results">6.6 <strong>Viewing the results</strong>
+</section><section><h2 class="section-heading" id="viewing-the-results">6.8 <strong>Viewing the results</strong>
 <a class="anchor" aria-label="anchor" href="#viewing-the-results"></a>
 </h2>
 <hr class="half-width">
@@ -2522,7 +2528,7 @@ of time from <em>days</em> a <em>years</em> and a <em>weeks</em>.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="visualise-and-analyse-the-first-epidemic">6.7 <strong>Visualise and analyse the first epidemic</strong>
+</section><section><h2 class="section-heading" id="visualise-and-analyse-the-first-epidemic">6.9 <strong>Visualise and analyse the first epidemic</strong>
 <a class="anchor" aria-label="anchor" href="#visualise-and-analyse-the-first-epidemic"></a>
 </h2>
 <hr class="half-width">
@@ -3748,8 +3754,8 @@ any links that you are not going to use.
   "url": "https://joskerus.github.io/EpiTKit-EN/instructor/aio.html",
   "identifier": "https://joskerus.github.io/EpiTKit-EN/instructor/aio.html",
   "dateCreated": "2024-06-04",
-  "dateModified": "2025-10-14",
-  "datePublished": "2025-10-14"
+  "dateModified": "2025-10-17",
+  "datePublished": "2025-10-17"
 }
 
   </script><script>
